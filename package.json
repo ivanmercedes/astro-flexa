@@ -1,0 +1,19 @@
+{
+    "name": "astro-flexa",
+    "type": "module",
+    "version": "0.1.0",
+    "private": true,
+    "description": "Astro 7 starter with Tailwind CSS v4 and content from Flexa CMS.",
+    "license": "MIT",
+    "scripts": {
+        "dev": "astro dev",
+        "build": "astro build",
+        "preview": "astro preview"
+    },
+    "dependencies": {
+        "@flexacms/astro": "^0.1.0",
+        "@tailwindcss/vite": "^4.3.5",
+        "astro": "^7.4.11",
+        "tailwindcss": "^4.3.5"
+    }
+}

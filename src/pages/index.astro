@@ -1,0 +1,13 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { flexa } from '../lib/flexa';
+
+const home = await flexa.entity('home').get();
+---
+
+<Layout>
+    <section class="mx-auto max-w-3xl px-4 py-24 text-center">
+        <h1 class="font-heading text-4xl font-bold text-dark md:text-5xl">{home.title ?? 'Astro Flexa'}</h1>
+        <p class="mt-4 text-lg text-dark/70">{home.intro ?? 'Create a "home" entity in Flexa CMS to edit this page.'}</p>
+    </section>
+</Layout>
